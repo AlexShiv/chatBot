@@ -1,0 +1,11 @@
+<nb-card>
+  <nb-card-header>
+    Создание мероприятий
+  </nb-card-header>
+  <nb-card-body>
+    <label class='search-label' for='search'>Поиск:</label>
+    <input nbInput [nbFilterInput]='dataSource' id='search' class='search-input'>
+        <ng2-smart-table [settings]='settings' [source]='source' (deleteConfirm)='onDeleteConfirm($event)'>
+        </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
